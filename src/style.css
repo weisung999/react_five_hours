@@ -3,18 +3,88 @@ body{
     background-color: whitesmoke;
   }
   
-  .navbar{
+.navbar{
     height: 100px;
-    background-color: #333;
-    color: whitesmoke;
+    background: rgb(16, 149, 151);
+    background: -webkit-linear-gradient(to right, rgb(3, 62, 63), rgb(16, 149, 151));
+    background: linear-gradient(to right, rgb(3, 62, 63), rgb(16, 149, 151));
+    color: whitesmoke; 
     margin-bottom: 15px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
+
+header > img {
+  height: 70%;
+}
+
+header > p {
+  font-family: VT323, monospace;
+  color: whitesmoke;
+  font-size: 50px;
+  margin-left: 5%;
+}
+
+.meme {
+  position: relative;
+  width: 60%;
+  margin: auto;
+}
+.meme > img {
+  width: 100%;
+}
+.meme > h2 {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0 ;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+.meme > .top {
+  top: 0;
+}
+.meme > .bottom {
+  bottom: 0;
+}
+.meme-form {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.meme-form > input {
+  width: 45%;
+  height: 40px;
+}
+.meme-form > button {
+  border: none;
+  font-family: VT323, monospace;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  color: white;
+  background: rgb(16, 149, 151);
+}
   
-  .todo-list {
+.todo-list {
     background-color: white;
     margin: auto;
     width: 50%;
@@ -34,9 +104,9 @@ body{
             /* The third layer shadow */
         0 20px 1px -9px rgba(0, 0, 0, 0.15);
     padding: 30px;
-  }
+}
 
-  .todo-item {
+.todo-item {
     display: flex;
     justify-self: flex-start;
     align-items: center;
@@ -47,17 +117,27 @@ body{
     font-weight: 100;
     font-size: 15px;
     color: #333333;
-  }
+}
 
-  input[type=checkbox] {
+input[type=checkbox] {
     margin-right: 10px;
     font-size: 30px;
-  }
+}
   
-  input[type=checkbox] {
+input[type=checkbox] {
     outline: 0;
-  }
+}
 
+
+@media screen and (max-width:576px) {
+  header > img {
+    margin-left: 5%;
+  }
+  header > p {
+    /* margin-left: 5%; */
+    font-size: 30px;
+  }
+}
 
   
   /* .App {
