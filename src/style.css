@@ -33,7 +33,9 @@ header > p {
   margin: auto;
 }
 .meme > img {
-  width: 100%;
+  width: 90%;
+  height: 70%;
+  margin-left: 5%; 
 }
 .meme > h2 {
   position: absolute;
@@ -121,11 +123,15 @@ header > p {
 
 input[type=checkbox] {
     margin-right: 10px;
-    font-size: 30px;
+    font-size: 0px;
 }
   
 input[type=checkbox] {
     outline: 0;
+}
+
+.input-placeholder {
+  font-size: 30px;
 }
 
 

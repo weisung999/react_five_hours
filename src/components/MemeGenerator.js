@@ -40,12 +40,14 @@ class MemeGenerator extends Component {
                 <form className="meme-form" onSubmit={this.handleSubmit}>
                     <input 
                         type="text" name="topText" 
+                        className="input-placeholder"
                         placeholder="Top Text" 
                         value={this.state.topText}
                         onChange={this.handleChange}  
                     />
                     <input 
-                        type="text" name="bottomText" 
+                        type="text" name="bottomText"
+                        className="input-placeholder" 
                         placeholder="Bottom Text" 
                         value={this.state.bottomText}
                         onChange={this.handleChange}  
